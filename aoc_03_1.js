@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_3.txt')
-text = text.toString().split("\r\n")
+let text = fs.readFileSync('aoc_03.txt')
+text = text.toString().split("\n")
 
 let gamma_rate = "";
 let epsilon_rate = "";

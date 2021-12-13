@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_1.txt')
+let text = fs.readFileSync('aoc_01.txt')
 text = text.toString().split("\n").map(x => parseInt(x))
 res = []
 for (let i=0; i<text.length - 2; i++){

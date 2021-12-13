@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_3.txt')
+let text = fs.readFileSync('aoc_03.txt')
 text = text.toString().split("\n")
 
 const width = text[0].length;

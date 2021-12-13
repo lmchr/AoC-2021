@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_6.txt')
+let text = fs.readFileSync('aoc_06.txt')
 text = text.toString().split(",").map(x => parseInt(x))
 
 const numDays = 256

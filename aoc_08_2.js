@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_8.txt').toString().split("\r\n")
+let text = fs.readFileSync('aoc_08.txt').toString().split("\n")
 text = text.map(x => x.split(" | "));
 const letters = {
     0: ["abcefg"],

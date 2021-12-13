@@ -1,12 +1,10 @@
 let horizontalPos = 0;
 let depth = 0;
-let aim = 0;
-
 
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_2.txt')
-text = text.toString().split("\r\n")
+let text = fs.readFileSync('aoc_02.txt')
+text = text.toString().split("\n")
 
 for (let i=0; i<text.length; i++){
     let t = text[i].split(" ")
@@ -14,14 +12,13 @@ for (let i=0; i<text.length; i++){
 
     switch (t[0]){
         case "forward":
-            horizontalPos += val
-            depth += val * aim;
+            horizontalPos+=val
             break;
         case "down":
-            aim += val;
+            depth+=val;
             break;
         case "up":
-            aim -= val;
+            depth-=val;
             break;
     }
 }

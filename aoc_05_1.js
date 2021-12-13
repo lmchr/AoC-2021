@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_5.txt')
+let text = fs.readFileSync('aoc_05.txt')
 text = text.toString().split("\n")
 
 let valueArray = []

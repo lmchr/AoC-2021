@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_7.txt')
+let text = fs.readFileSync('aoc_07.txt')
 text = text.toString().split(",").map(x => parseInt(x))
 
 const maxValue = Math.max(...text)

@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-let text = fs.readFileSync('aoc_4.txt')
-text = text.toString().split("\r\n")
+let text = fs.readFileSync('aoc_04.txt')
+text = text.toString().split("\n")
 
 class Element {
     constructor(val, isDrawn=false){
