@@ -1,5 +1,5 @@
 const fs = require('fs');
-3
+
 let text = fs.readFileSync('aoc_13.txt').toString().split("\n")
 
 let folds = text.filter(x => x.startsWith('fold along ')).map(x => x.slice("fold along ".length)).map(x => x.split("=")).map(x => [x[0], parseInt(x[1])])
